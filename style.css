@@ -1,0 +1,189 @@
+ body {
+            background: #181818;
+            color: #FF8000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        header {
+            background: #222;
+            padding: 20px 0;
+            border-bottom: 4px solid #FF8000;
+        }
+        .titulo {
+            font-size: 2.5em;
+            color: #FF8000;
+            text-shadow: 2px 2px 0 #000;
+            margin: 0;
+            text-align: center;
+            font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+       
+        .menu a {
+            color: #FF8000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.2s;
+            margin: 0 15px;
+        }
+        .nav-item a:hover {
+            color: #fff;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #232323;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #000a;
+            padding: 30px;
+        }
+        h2 {
+            color: #FF8000;
+            text-shadow: 1px 1px 0 #000;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.5em;
+            color: #FFA040;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-contato {
+        background: #222;
+        padding: 25px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px #0005;
+        max-width: 500px;
+        margin: 0 auto 30px left;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        }
+        .form-contato input[type="text"],
+        .form-contato input[type="email"],
+        .form-contato textarea {
+            background: #181818;
+            color: #FF8000;
+            border: 2px solid #FF8000;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .form-contato input[type="text"]:focus,
+        .form-contato input[type="email"]:focus,
+        .form-contato textarea:focus {
+            border-color: #FFA040;
+            box-shadow: 0 0 5px #FFA04080;
+            outline: none;
+        }
+
+        .form-contato button,
+        .form-contato input[type="submit"] {
+            background: #FF8000;
+            color: #181818;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            font-family: inherit;
+        
+        }
+
+        .form-contato button:hover,
+        .form-contato input[type="submit"]:hover {
+            background: #FFA040;
+            color: #fff;
+        }
+
+        nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff800000; /* cor do botão */
+    color: #181818;            /* cor do texto */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e67300; /* cor ao passar o mouse */
+    transform: scale(1.05);    /* efeito de leve zoom */
+}
+       /* Esconde o botão hamburguer por padrão */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #FF8000;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+/* Mobile first - menu escondido */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li a {
+        padding: 12px 0;
+        display: block;
+    }
+}
+
+ 
+           
